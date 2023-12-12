@@ -1,0 +1,19 @@
+  
+.page{
+    background-color: white;
+    margin:90px;
+    font-size: medium;
+    /* "border: black 2px solid" */
+}
+.url{
+    color:green;
+}
+.btn{
+    background-color: #04AA6D;
+    color: white;
+    padding: 3px 70px;
+    margin: 8px 0;
+} 
+.login{
+    font-size: 25px;
+}

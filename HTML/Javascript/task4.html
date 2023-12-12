@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .class1{
+            margin: auto;
+            
+            height: 200px;
+            width: 400px;
+          }
+          #inp1{
+            text-align: center;
+            margin-top: auto;
+            margin: auto;
+            right: 30%;
+          }
+    </style>
+</head>
+<body>
+    <div class="class1">
+      <h1 >Paragraph</h1>
+      <textarea id="demo" id="text" cols="30" rows="10">
+
+    </textarea><br><br>
+    <label > Old Text</label>
+    <input type="text" > 
+  <button id="inp1" type="button" onclick="Replace()"> Replace</button><br><br>
+    <label >New Text</label>
+    <input type="text">
+    <button id="inp2" type="button" onclick="ReplaceAll()"> Replace All</button> 
+</div>
+    <script>
+var n1, n2;
+function Replace(){
+var text = document.getElementsByName("demo").innerHTML = text.replace("n1", "n2");
+    }
+    function RplaceAll(){
+    let text = document.getElementById("demo").value; 
+ document.getElementById("inp2").value = text.replaceAll("friends", "students");
+    }
+
+
+    </script>
+</body>
+</html>

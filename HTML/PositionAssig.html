@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .container {
+          position: relative;
+          border: 2px solid black;
+          width: 600px;
+          height: 400px;
+        }
+        
+        .topleft {
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          font-size: 25px;
+        }
+        .topright {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 25px;
+        }
+        .bottomleft {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-size: 25px;
+        }
+        .bottomright {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 25px;
+        }
+        .center {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+          font-size: 25px;
+        }
+        img { 
+          width: 100%;
+          height: 500px;
+          opacity: 0.3;
+        }
+        </style>
+</head>
+
+<body>
+<h2>Bird Flying</h2>
+<div class="container">
+  <img src="./Assest/images/bird.gif" alt="bird" width="300" height="200">
+  <div class="topleft">Top Left</div>
+  <div class="topright">Top Right</div>
+  <div class="bottomleft">Bottom Left</div>
+  <div class="bottomright">Bottom Right</div>
+  <div class="center">Center</div>
+</div>
+</body>
+</html>

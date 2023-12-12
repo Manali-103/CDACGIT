@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 class="cls1">Greeting</h1>
+    <img id="img" src="../Assest/images/Jhansi ki rani.jfif" alt="img">
+    <button type="button" id="btn1">Hide</button>
+    <button type="button" id="btn2">Show</button>
+    <hr>
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum assumenda accusamus vero, magni ipsa voluptate totam mollitia aspernatur nostrum saepe sunt ut nulla quae molestiae. Molestias, nisi! Quia qui eveniet corrupti? Molestiae corporis placeat dolorem magnam voluptatum laboriosam ipsa necessitatibus tenetur, eum cum ipsum at, sint eius unde nam hic, provident quibusdam eaque ab quas id atque debitis. Saepe, quaerat consectetur eos esse illum labore provident assumenda id expedita tempore earum aspernatur autem architecto eveniet eaque sed facilis? Vitae eos ad reiciendis deserunt labore reprehenderit distinctio laudantium praesentium consequatur provident in, voluptate autem ex odio illo ipsum quis dolor quae. Quasi suscipit atque alias architecto, vero quas quia hic non repellendus corrupti! Quo voluptates illum at saepe cumque sunt sed ullam quibusdam ratione odio voluptate, tempora ipsum corporis provident quisquam quae aliquam minima quas officia. Voluptatum qui praesentium facilis fugit quaerat aperiam. Rem repellat esse recusandae laborum? Voluptatum, assumenda.</p>
+    <button id="btnslide1" type="button">slideUp</button>
+    <button id="btnslide2" type="button">slideDown</button>
+    <button id="btnslide3" type="button">slideToggle</button>
+    <script>
+        $(document).ready(function (){
+            $("#btn1").click(()=>{
+            $("#img").hide(1000,()=>{window.alert("image hide successfully")
+        });
+            });
+            $("#btn2").click(()=>{
+            $("#img").show(1000,()=>{window.alert("image display successfully")
+        });
+    });
+            $("#btnslide1").click(()=>{
+             $("#p").slideUp(1000);
+         })
+
+         $("#btnslide2").click(()=>{
+             $("#p").slideDown(1000);
+         })
+         $("#btnslide3").click(()=>{
+             $("#p").slideToggle(1000);
+         })
+           
+
+        // $("#btn1").click(()=>{
+        //     $(".cls1").hide();
+        // })
+
+        // $("#btn2").click(()=>{
+        //     $(".cls1").show();
+        // })
+    })
+    </script>
+</body>
+</html>

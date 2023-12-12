@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        border:3px solid blue;
+        width: 130px;
+        height: 100px;
+        position: relative;
+        background-color: greenyellow;
+        text-align: center;
+    }
+    .box2{
+        border: 3px solid violet;
+        width: 150px;
+        height: 121px;
+        margin: auto;
+        background-color: aqua;
+        position: relative;
+        transition: transform 2s;
+    }
+</style>
+<body>
+    <div class="box1">hii</div>
+    <div class="box2">hello</div>
+    <br>
+   <div style="text-align: center;"> 
+    <button type="button" id="btnflip">Filp It</button>
+   </div>
+   <script>
+    $(document).ready(function() {
+        $(".box1").animate({"left":"300px","borderRadius":"50%"},1000);
+
+        $("#btnflip").click(()=>{
+            $(".box2").css({"transform":"rotateY(323deg)"})
+        })
+       
+    });
+   
+   </script>
+</body>
+</html>

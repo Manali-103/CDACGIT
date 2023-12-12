@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="d1">
+        <p id="1">this is para-1</p>
+        <p id="2">this is para-2</p>
+   </div>
+      <button type="button" onclick="displayFruits()">Check Fruits</button>
+         <ul id="ulid"></ul>
+    <script>
+        var emp = {
+            id:101,
+            name:"Manali",
+            Post:"CEO",
+            single:true,
+            address:{
+                flatno:"A21",
+                buildingname:"Om"
+            }
+        }
+        document.write(`Id:${emp.id} Name:${emp.name} past:${emp.Post} single:${emp.single} address:${emp.address.flatno}`,"<br>");
+
+        //creating json data
+        var jasondata = {
+            "id":201, "name":"Mana", "post":"Manager"
+        }
+        //converting  object to json
+        var objectIntoJson = JSON.stringify(emp);
+        document.write(objectIntoJson, "<br>");
+        // converting json to object
+        var jsonToObject = JSON.parse(objectIntoJson);
+        document.write(jsonToObject.name);
+
+
+        //to return element
+        var returnEl = document.getElementById("d1");
+        console.log(returnEl);
+
+        //to create an element
+        var newEl = document.createElement("p")
+        console.log(newEl);
+        newEl.setAttribute("id","3");
+        newEl.setAttribute("class", "cls1");
+
+        //to create text node
+        var textNode = document.createTextNode("this is para-3");
+
+        //to insert text node into element
+        newEl.appendChild(textNode);
+        returnEl.appendChild(newEl)
+
+        //to remove element
+        returnEl.removeChild(newEl)
+
+        var fruits = ["Apple", "mango", "Banana", "graps", "Chikoos"];
+        function displayFruits(){
+            var Ul = document.getElementById("ulid");
+            for(var i=0;i<fruits.length;i++){
+            var li = document.createElement("li");
+        li.innerHTML = fruits[i];
+        Ul.appendChild(li);
+        }
+        }
+    </script>
+</body>
+</html>
